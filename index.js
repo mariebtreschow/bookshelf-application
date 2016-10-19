@@ -12,22 +12,18 @@ app.get('/', function(request, response) {
 });
 
 app.get('/', function(request, response) {
-
   response.sendFile(__dirname + '/index.html');
 });
 
 app.get('/', function(request, response) {
-
   response.sendFile(__dirname + '/index2.html');
 });
 
 app.get('/', function(request, response) {
-
   response.sendFile(__dirname + '/index3.html');
 });
 
 app.get('/', function(request, response) {
-
   response.sendFile(__dirname + '/index4.html');
 });
 
