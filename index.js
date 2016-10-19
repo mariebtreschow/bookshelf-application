@@ -2,7 +2,7 @@ var express = require('express');
 var pug = require('pug');
 var app = express();
 
-app.use(express.static(__dirname + '/'));
+app.use(express.static(__dirname + '/public'));
 
 app.set('view engine', './pug');
 app.set('views', './views');
@@ -12,19 +12,19 @@ app.get('/', function(request, response) {
 });
 
 app.get('/', function(request, response) {
-  response.sendFile(__dirname + '/index.html');
+  response.sendFile(__dirname + '/public' + '/index.html');
 });
 
 app.get('/', function(request, response) {
-  response.sendFile(__dirname + '/index2.html');
+  response.sendFile(__dirname + '/public' + '/index2.html');
 });
 
 app.get('/', function(request, response) {
-  response.sendFile(__dirname + '/index3.html');
+  response.sendFile(__dirname + '/public' + '/index3.html');
 });
 
 app.get('/', function(request, response) {
-  response.sendFile(__dirname + '/index4.html');
+  response.sendFile(__dirname + '/public' + '/index4.html');
 });
 
 app.listen(3000, function() {
