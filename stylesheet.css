@@ -1,6 +1,8 @@
 body {
   font-family: 'Alegreya Sans', sans-serif;
-  background-image: url("https://apps.atilf.fr/infoshsdoc/wp-content/uploads/2014/01/2012-11_bing_11_2_2012_en-gb.jpg");
+  background-image: url("http://industrystandarddesign.com/wp-content/uploads/2015/11/huge-book-shelf.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   color: white;
   font-size: 18px;
 }
@@ -8,17 +10,21 @@ body {
 .navbar {
   font-size: 17px;
   color: white;
+  background-color: black;
   letter-spacing: 1.5px;
+  text-align: right;
 }
+
 
 h1 {
   font-size: 70px;
   letter-spacing: 5px;
+  color: white;
 
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 22px;
   color: white;
   font-style: italic;
 }
