@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lora', serif;
+  font-family: 'Alegreya Sans', sans-serif;
   background-image: url("https://apps.atilf.fr/infoshsdoc/wp-content/uploads/2014/01/2012-11_bing_11_2_2012_en-gb.jpg");
   color: white;
   font-size: 18px;
@@ -8,20 +8,35 @@ body {
 .navbar {
   font-size: 17px;
   color: white;
+  letter-spacing: 1.5px;
 }
 h1 {
   font-size: 70px;
   font-family: 'Lora', serif;
+  letter-spacing: 5px;
+
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 32px;
+  color: white;
+  font-style: italic;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 46px;
 }
 
+.bg-3 {
+  background-color: #262626;opacity:0.9;
+
+
+}
+
+.col-xs-3 img {
+  align-items: center;
+
+}
 
 img {
 float: left;
@@ -32,13 +47,4 @@ height: 350px;
 
 #introduction {
   margin: 60px;
-}
-
-.footer {
-  position: fixed;;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  background-color: #f5f5f5;
-
 }
