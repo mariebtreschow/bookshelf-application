@@ -1,6 +1,6 @@
 body {
   font-family: 'Alegreya Sans', sans-serif;
-  background-image: url("http://industrystandarddesign.com/wp-content/uploads/2015/11/huge-book-shelf.jpg");
+  background-image: url("http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/10/book-art-drawing-creative-1680x1050-wallpaper.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   color: white;
@@ -17,7 +17,7 @@ body {
 
 
 h1 {
-  font-size: 70px;
+  font-size: 80px;
   letter-spacing: 5px;
   color: white;
 
@@ -46,14 +46,15 @@ h4 {
 }
 
 .bg-3 {
-  background-color: #262626;opacity:0.9;
-
 
 }
 
 .col-xs-3 img {
   align-items: center;
+}
 
+.col-xs-10 {
+  background-color: black;
 }
 
 img {
