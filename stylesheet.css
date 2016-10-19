@@ -1,15 +1,21 @@
 body {
-
+  font-family: 'Lora', serif;
+  background-image: url("https://apps.atilf.fr/infoshsdoc/wp-content/uploads/2014/01/2012-11_bing_11_2_2012_en-gb.jpg");
+  color: white;
+  font-size: 18px;
 }
 
-
+.navbar {
+  font-size: 17px;
+  color: white;
+}
 h1 {
   font-size: 70px;
-
+  font-family: 'Cormorant Garamond', serif;
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 36px;
 }
 
 h3 {
