@@ -8,23 +8,20 @@ app.set('view engine', './pug');
 app.set('views', './views');
 
 app.get('/', function(request, response) {
-  response.render('/application.pug');
+  response.sendFile(__dirname + '/homepage.html');
 });
 
 app.get('/', function(request, response) {
-  response.sendFile(__dirname + '/index.html');
+  response.sendFile(__dirname + '/first-book.html');
 });
 
 app.get('/', function(request, response) {
-  response.sendFile(__dirname + '/index2.html');
+  response.sendFile(__dirname + '/second-book.html');
 });
 
 app.get('/', function(request, response) {
-  response.sendFile(__dirname + '/index3.html');
-});
 
-app.get('/', function(request, response) {
-  response.sendFile(__dirname + '/index4.html');
+  response.sendFile(__dirname + '/third-book.html');
 });
 
 app.listen(3000, function() {
