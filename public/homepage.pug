@@ -1,0 +1,48 @@
+doctype html
+html.no-js
+  head
+    title Bookshelft
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(href='https://fonts.googleapis.com/css?family=Cormorant+Garamond|Lora|Noto+Sans', rel='stylesheet')
+    link(rel='stylesheet', href='stylesheet.css')
+  body
+    nav.navbar.navbar-inverse
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+        #navbar-collapse.collapse.navbar-collapse
+
+            ul.nav.navbar-nav
+                li.active
+                  a(href='homepage.pug') Home page
+                   each book in books
+                    li
+                      a(href='/books/' + book.slug)
+                        p=book.title
+
+
+    #introduction.container-fluid
+      .row
+        .col-xs-1
+          .col-xs-9
+              h1
+                b Marie&apos;s bookshelf:
+
+    .container-fluid.bg-3
+      .row
+          each book in books
+            .col-xs-3
+              h2= book.title
+                a(href='/books/' + book.slug)
+                  img(src=book.imageURL)
+
+
+
+    #introduction.container-fluid
+      .row
+        .col-xs-1
+          .col-xs-7
+            .col-xs-3

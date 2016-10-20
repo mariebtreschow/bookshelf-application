@@ -1,0 +1,40 @@
+html.no-js
+  head
+    title Bookshelft
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(href='https://fonts.googleapis.com/css?family=Cormorant+Garamond|Lora|Noto+Sans', rel='stylesheet')
+    link(rel='stylesheet', href='stylesheet.css')
+  body
+    nav.navbar.navbar-inverse
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+        #navbar-collapse.collapse.navbar-collapse
+
+            ul.nav.navbar-nav
+                li.active
+                  a(href='homepage.pug') Home page
+                   each book in books
+                    li
+                      a(href='/books/' + book.slug)
+                        p=book.title
+
+    .container-fluid.bg-3
+      div(clas='row')
+        .col-xs-1
+        .col-xs-10
+            h3= book.title
+              p
+                img(class="img" src=book.imageURL)
+                  h4
+                    | Author: #{book.authorName}
+                      a(target='_blank', href='https://sv.wikipedia.org/wiki/Stieg_Larsson') Stieg Larsson
+                        |  Number of pages: #{book.numberOfPages}
+                          br
+                            br
+                              p= book.description
+
+          .col-xs-1
