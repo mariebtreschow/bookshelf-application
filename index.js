@@ -47,13 +47,13 @@ app.get('/', function(request, response) {
 
 app.get('/books', function(req, res) {
   console.log('Requesting /books');
-  res.send(pug.renderFile('public/homepage.pug', { books: dataInMemory }));
+  res.send(pug.renderFile('views/homepage.pug', { books: dataInMemory }));
 });
 
 app.get('/books/*', function(req, res) {
   console.log('Requesting /book');
-  var foundBook = findBook(res.prama[0]);
-  res.send(pug.renderFile('public/booktemplate.pug', { book: foundBook }));
+  var foundBook = findBook(req.params[0]);
+  res.send(pug.renderFile('views/booktemplate.pug', { book: foundBook}));
 });
 
 

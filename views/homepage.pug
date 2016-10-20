@@ -1,27 +1,17 @@
 doctype html
 html.no-js
   head
-    title Bookshelft
+    title Bookshelf
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
     link(href='https://fonts.googleapis.com/css?family=Cormorant+Garamond|Lora|Noto+Sans', rel='stylesheet')
-    link(rel='stylesheet', href='stylesheet.css')
+    link(rel='stylesheet', href='/css/stylesheet.css')
   body
-    nav.navbar.navbar-inverse
-      .container-fluid
-        .navbar-header
-          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
-        #navbar-collapse.collapse.navbar-collapse
 
-            ul.nav.navbar-nav
-                li.active
-                  a(href='homepage.pug') Home page
-                   each book in books
-                    li
-                      a(href='/books/' + book.slug)
-                        p=book.title
+    include navbar
 
 
     #introduction.container-fluid
@@ -37,7 +27,7 @@ html.no-js
             .col-xs-3
               h2= book.title
                 a(href='/books/' + book.slug)
-                  img(src=book.imageURL)
+                  img(width="225" height="335" src=book.imageURL)
 
 
 

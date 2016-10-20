@@ -1,0 +1,31 @@
+html.no-js
+	head
+		title Bookshelf
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+		link(href='https://fonts.googleapis.com/css?family=Cormorant+Garamond|Lora|Noto+Sans', rel='stylesheet')
+		link(rel='stylesheet', href='/css/stylesheet.css')
+	body
+		include navbar
+
+		.container-fluid
+			.row
+				.col-xs-12
+
+
+		.container-fluid.bg-3.text-center
+			div(clas='row')
+				.col-xs-1
+				.col-xs-10
+					h3= book.title
+					p
+					img(class="img" src=book.imageURL)
+
+					h4 Author: #{book.authorName}
+					a(target='_blank', href='https://sv.wikipedia.org/wiki/Stieg_Larsson') Stieg Larsson
+					p Number of pages: #{book.numberOfPages}
+					p= book.description
+				.col-xs-1
